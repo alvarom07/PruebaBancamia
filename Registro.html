@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alvaro Marin">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<!-- Campos del formulario de registro -->
+<body class="bg-light">
+    <div class="container">
+        <h2 class="text-center mt-5">Registro de Usuario</h2>
+        <form id="registerForm" class="mt-4">
+            <div class="form-group">
+                <label for="firstName">Nombres:</label>
+                <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Apellidos:</label>
+                <input type="text" class="form-control" id="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="documentType">Tipo de documento:</label>
+                <select class="form-control" id="documentType" required>
+                    <option value="" disabled selected>Seleccione...</option>
+                    <option value="C.C.">Cédula de Ciudadanía</option>
+                    <option value="T.I.">Tarjeta de Identidad</option>
+                    <option value="C.E.">Cédula de Extranjería</option> 
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="documentNumber">Número de documento:</label>
+                <input type="number" class="form-control" id="documentNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="birthDate">Fecha de nacimiento:</label>
+                <input type="date" class="form-control" id="birthDate" required>
+            </div>
+            <div class="form-group">
+                <label for="birthCity">Ciudad de nacimiento:</label>
+                <input type="text" class="form-control" id="birthCity" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="newUsername">Usuario:</label>
+                <input type="text" class="form-control" id="newUsername" required>
+            </div>
+            <div class="form-group">
+                <label for="newPassword">Contraseña:</label>
+                <input type="password" class="form-control" id="newPassword" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirmar Contraseña:</label>
+                <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Registrar</button>
+        </form>
+        <div class="text-center mt-3">
+            <a href="index.html">¿Ya tienes una cuenta? Iniciar sesión</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
